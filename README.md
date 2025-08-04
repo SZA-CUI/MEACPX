@@ -121,10 +121,12 @@ Sample_Executed_Code_For_Guidance.ipynb
   ```
 ## 🧪 Dataset Citation
 If you use this work in your research, please cite the dataset:
+```bash
 Gensini, V. et al. (2019). Dataset of tweets, used to detect hazardous events at the Baths of Diocletian site in Rome. Zenodo. DOI:10.5281/zenodo.3258415
  ```
 ## 🧪 Code Citation
 If you use this work in your research, please cite the Code:
+```bash
 @misc{zishanali2025multilingual,
   author       = {Seyyad Zishan Ali},
   title        = {Multilingual Event-Aware Content Prioritization Code},
@@ -132,3 +134,4 @@ If you use this work in your research, please cite the Code:
   howpublished = {\url{https://github.com/seyyadzishanali-CUI/Multilingual_Event_Aware_Content_Prioritization_Code}},
   note         = {GitHub repository}
 }
+ ```
