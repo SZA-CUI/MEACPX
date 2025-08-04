@@ -132,6 +132,6 @@ If you use this work in your research, please cite the work:
   author    = {Ali, Seyyad Zishan and Mirza, Hamid Turab and Bilal, Ahmad and Hussain, Ibrar},
   journal   = {Under Review},
   year      = {2025},
-  note      = {\url{https://github.com/seyyadzishanali-CUI/Multilingual_Event_Aware_Content_Prioritization_Code}}
+  note      = {\url{https://github.com/SZA-CUI/MEACPX}}
 }
  ```
