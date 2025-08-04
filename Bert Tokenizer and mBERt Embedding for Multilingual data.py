@@ -1,4 +1,4 @@
-#Bert Tokenizer and mBERt Embedding for Multilingual data
+#mBert Tokenizer and mBERt Embedding for Multilingual data
 # mBERT Tokenizer and Model (mBERT)
 tokenizer = BertTokenizer.from_pretrained('bert-base-multilingual-cased')
 bert_model = BertModel.from_pretrained('bert-base-multilingual-cased')
