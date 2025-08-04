@@ -1,5 +1,5 @@
 # Multilingual Event-Aware Content Prioritization
-This repository contains the source code for multilingual event-aware content prioritization using tweet data. The aim of this research is to detect and distinguish situational contexts in multilingual tweets, supporting the development of more personalized and context-sensitive content recommendations.
+This repository contains the source code for multilingual event-aware content prioritization using tweet data.The theoretical background of this code is presented in the paper "Multilingual Event-Aware Content Prioritization on X through Temporal, Spatial, and Semantic Feature Integration" by Ali, Seyyad Zishan and Mirza, Hamid Turab and Bilal, Ahmad and Hussain, Ibrar, currently under review.
 
 ---
 ## 🔍 Project Objective
