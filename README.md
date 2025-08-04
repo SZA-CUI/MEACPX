@@ -119,3 +119,8 @@ To get started, simply run the notebook:
 ```bash
 Sample_Executed_Code_For_Guidance.ipynb
 
+##Citation
+If you use this work in your research, please cite the dataset:
+Gensini, V. et al. (2019). Dataset of tweets, used to detect hazardous events at the Baths of Diocletian site in Rome. Zenodo. DOI:10.5281/zenodo.3258415
+
+
