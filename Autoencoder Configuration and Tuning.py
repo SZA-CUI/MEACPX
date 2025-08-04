@@ -45,3 +45,23 @@ plt.ylabel('Count')
 plt.title('Distribution of Tweets')
 plt.tight_layout()  # Adjust layout for better spacing
 plt.show()
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
+
+# Assuming you have a DataFrame 'df' with a 'cluster' column and a 'text' column
+# df = ...
+
+# Generate WordClouds for each cluster
+for cluster_id in df_new['mBERT_Autoencoder_cluster'].unique():
+    # Extract text for the current cluster
+    cluster_text = ' '.join(df_new[df_new['mBERT_Autoencoder_cluster'] == cluster_id]['preprocessed'])
+
+    # Generate WordCloud
+    wordcloud = WordCloud(width=800, height=400, background_color='white').generate(cluster_text)
+
+    # Plot WordCloud
+    plt.figure(figsize=(10, 5))
+    plt.imshow(wordcloud, interpolation='bilinear')
+    plt.title(f'Word Cloud - Cluster {cluster_id}')
+    plt.axis('off')
+    plt.show()
