@@ -10,7 +10,7 @@ With increasing global social media activity during emergencies, prioritizing re
 - Clustering and topic modeling (LDA, BERT, Autoencoders)
 - Extracting semantic features (hashtags, time, location)
 - Assigning event-aware labels
-- Prioritizing content for emergency response
+- Prioritizing content based on location time and situations
 
 ---
 
@@ -29,7 +29,7 @@ With increasing global social media activity during emergencies, prioritizing re
 | File Name | Description |
 |----------|-------------|
 | `Required Libraries and Settings.py` | Contains all necessary imports, environment configurations, and global constants. |
-| `Dataset Preprocessing and Conversion API.py` | Loads the original dataset and uses translation APIs to convert multilingual tweets into English. |
+| `Dataset Preprocessing and Conversion API.py` | Loads the original dataset and uses translation APIs to convert italian tweets into English (Resultantly Mix of Multilingual due to limited translation). |
 | `Preprocessing of data and feature extraction.py` | Cleans, tokenizes, removes stopwords, extracts hashtags, and prepares tweet tokens. |
 | `Rename Bert Tokenizer and mBERt Embedding for Multiling.ipynb` | Applies multilingual BERT (mBERT) for semantic embeddings of tweets. |
 | `LDA Model Fine Tuning.py` | Performs topic modeling using LDA and optimizes the number of topics for better coherence. |
