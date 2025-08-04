@@ -1,5 +1,5 @@
 # Multilingual Event-Aware Content Prioritization
-This repository contains the implementation of our multilingual, event-aware content prioritization fraemework applied on X (Twitter) data related to hazardous events. The goal of the project is to identify and prioritize tweets containing multilingual content by combining natural language processing (NLP), topic modeling, deep learning, and contextual feature extraction techniques.
+This repository contains the source code for multilingual event-aware content prioritization using tweet data. The aim of this research is to detect and distinguish situational contexts in multilingual tweets, supporting the development of more personalized and context-sensitive content recommendations.
 
 ---
 ## 🔍 Project Objective
