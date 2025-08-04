@@ -100,7 +100,7 @@ With increasing global social media activity during emergencies, prioritizing re
 - LDA topics and clustered tweets
 - Keyword-based cluster labels
 - Time-based slot assignment
-- Final tweet classification: **Event-relevant vs Non-relevant**
+- Final tweet with fine grand situations convertrd into event-aware contexts: **Event-relevant vs Non-relevant**
 
 ---
 
