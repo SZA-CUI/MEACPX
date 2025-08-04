@@ -125,3 +125,10 @@ Gensini, V. et al. (2019). Dataset of tweets, used to detect hazardous events at
  ```
 ## 🧪 Code Citation
 If you use this work in your research, please cite the Code:
+@misc{zishanali2025multilingual,
+  author       = {Seyyad Zishan Ali},
+  title        = {Multilingual Event-Aware Content Prioritization Code},
+  year         = {2025},
+  howpublished = {\url{https://github.com/seyyadzishanali-CUI/Multilingual_Event_Aware_Content_Prioritization_Code}},
+  note         = {GitHub repository}
+}
