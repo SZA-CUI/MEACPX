@@ -65,3 +65,45 @@ plt.title('DBSCAN Clusters (PCA)')
 plt.show()
 # Display the updated DataFrame with the cluster assignments
 print(df_new[['Tweets', 'Time', 'month', 'day', 'hour', 'time_slot', 'Localization', 'extracted_hashtags', 'Event_label', 'Specific Event']])
+# Load spaCy English model
+nlp = spacy.load("en_core_web_sm")
+# Sample DataFrame (replace this with your full dataset)
+df_new = pd.DataFrame(df_new)
+# Step 1: Convert default timestamp
+df_new['Formatted_Time'] = pd.to_datetime(df_new['Time'], unit='ms')
+df_new['default_year'] = df_new['Formatted_Time'].dt.year
+df_new['default_day'] = df_new['Formatted_Time'].dt.day
+# Step 2: Extract features from text
+def extract_location(text):
+    doc = nlp(text)
+    for ent in doc.ents:
+        if ent.label_ == "GPE":
+            return ent.text
+    return None
+def extract_year(text):
+    years = re.findall(r'(20\d{2})', text)
+    return int(years[0]) if years else None
+def extract_day(text):
+    try:
+        date = dateutil.parser.parse(text, fuzzy=True, default=datetime(1900, 1, 1))
+        return date.day
+    except Exception:
+        return None
+# Step 3: Apply extraction functions
+df_new['location_extracted'] = df_new['Tweets'].apply(extract_location)
+df_new['year_extracted'] = df_new['Tweets'].apply(extract_year)
+df_new['day_extracted'] = df_new['Tweets'].apply(extract_day)
+
+# Step 4: Replace values if extracted
+df_new['Localization'] = df_new.apply(
+    lambda row: row['location_extracted'] if row['location_extracted'] else row['Localization'], axis=1)
+df_new['year'] = df_new.apply(
+    lambda row: row['year_extracted'] if row['year_extracted'] else row['default_year'], axis=1)
+df_new['day'] = df_new.apply(
+    lambda row: row['day_extracted'] if row['day_extracted'] else row['default_day'], axis=1)
+
+# Clean up temporary columns
+df_new.drop(columns=['location_extracted', 'year_extracted', 'day_extracted', 'default_year', 'default_day'], inplace=True)
+
+# Final output
+print(df_new[['Tweets', 'Localization', 'year', 'day','Time']])
