@@ -31,7 +31,7 @@ With increasing global social media activity during emergencies, prioritizing re
 | `Required Libraries and Settings.py` | Contains all necessary imports, environment configurations, and global constants. |
 | `Dataset Preprocessing and Conversion API.py` | Loads the original dataset and uses translation APIs to convert italian tweets into English (Resultantly Mix of Multilingual due to limited translation). |
 | `Preprocessing of data and feature extraction.py` | Cleans, tokenizes, removes stopwords, extracts hashtags, and prepares tweet tokens. |
-| `Rename Bert Tokenizer and mBERt Embedding for Multiling.ipynb` | Applies multilingual BERT (mBERT) for semantic embeddings of tweets. |
+| `Bert Tokenizer and mBERt Embedding for Multilingual Tweets.py` | Applies multilingual BERT (mBERT) for semantic embeddings of tweets. |
 | `LDA Model Fine Tuning.py` | Performs topic modeling using LDA and optimizes the number of topics for better coherence. |
 | `Autoencoder Configuration and Tuning.py` | Applies autoencoders for dimensionality reduction and clustering of tweet vectors. |
 | `Top 5 words extraction within each cluster.py` | Identifies the most representative words in each cluster for labeling. |
