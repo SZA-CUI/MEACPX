@@ -40,7 +40,6 @@ With increasing global social media activity during emergencies, prioritizing re
 | `Time Slotting and Additional Feature Extraction.py` | Extracts temporal (day, month, hour, year) and spatial (location, city) features from tweet text or metadata. |
 | `Event Aware Content Distinguishing Using Combined Feature set.py` | Integrates all extracted features to identify and prioritize event-relevant tweets. |
 | `Sample_Executed_Code_For_Guidance.ipynb` | A demonstration notebook with 1,000 sample tweets for ease of understanding and replication. |
-
 | `Clustering_Evaluations—Ground_Truth_Dataset.ipynb` | A notebook for framework's clustering performance evaluations on ground-truth data. |
 | `Baseline_Unsupervised_Models_Comparison.ipynb` | A notebook for framework's comparative evaluations with baseline models on ground-truth data. |
 | `Application_Oriented_Evaluation-User_Perspective.ipynb` | A notebook for framework's application oriented evaluations with user's perspective on ground-truth mixed-lingual data. |
