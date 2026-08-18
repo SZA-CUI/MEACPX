@@ -44,6 +44,8 @@ With increasing global social media activity during emergencies, prioritizing re
 | `Baseline_Unsupervised_Models_Comparison.ipynb` | A notebook for framework's comparative evaluations with baseline models on ground-truth data. |
 | `Application_Oriented_Evaluation-User_Perspective.ipynb` | A notebook for framework's application oriented evaluations with user's perspective on ground-truth mixed-lingual data. |
 | `Application_Oriented_Evaluation-Single-Lingual.ipynb` | A notebook for framework's application oriented evaluations with user's perspective on ground-truth single-lingual data. |
+| `scalability-and-adaptability-evaluation.ipynb` | A notebook for framework's scalability and adaptability evaluations on ground-truth mixed-lingual data. |
+
 
 ---
 
